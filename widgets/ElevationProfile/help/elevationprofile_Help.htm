@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="NOINDEX,FOLLOW" name="ROBOTS"/>
+  <meta content="en" name="content-language"/>
+  <title>Web AppBuilder for ArcGIS | Help - Elevation Profile Widget</title>
+  <link href="rsrc/common.css" type="text/css" rel="stylesheet"/>
+  <link href="rsrc/screen.css" type="text/css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="images/help.png" type="image/x-icon">
+</head>
+
+<body style="padding: 20px;">
+  <div class="toc">
+    <h5>In this topic</h5>
+    <ol>
+      <li><a href="#ESRI_SECTION1_DDBD4D2E6A354DBC868DA37BD0C9DE6F">Configuring the Elevation Profile Widget</a>
+      </li>
+      <li><a href="#ESRI_SECTION1_10275307C5DF45D986A6922A5BBBE67B">Using the Elevation Profile Widget</a>
+      </li>
+    </ol>
+  </div>
+  <h1 class="divider page-title">Elevation Profile Widget 2.24</h1>
+  <section class="section1 padded-anchor" id="GUID-427FD8E9-7F89-4FDD-981C-E39B8F23C663" purpose="section1">
+    <h2></h2>
+    <p id="GUID-F0284F26-DF6F-4C0A-80C9-C5D7628BE2A6">This widget allows you to measure a line on the map and get the elevation profile for that line based on the profile geoprocessing service supplied.<br/>
+	You can also select an existing line feature and in that lines popup menu you can choose "Profile selected line..."</p>
+  </section>
+  <section class="section1 padded-anchor" id="ESRI_SECTION1_DDBD4D2E6A354DBC868DA37BD0C9DE6F" purpose="section1">
+    <h2>Configuring the Elevation Profile Widget</h2>
+  </section>
+  <section class="wfsteps padded-anchor" purpose="wfsteps">
+    <h4></h4>
+    <div class="steps" id="GUID-CCB64297-6506-46F5-9010-7AE4DB1ED980">
+      <ol>
+        <li purpose="step" id="ESRI_STEP_97DA5F894B744867B452AAE4FC97E19F"><span purpose="cmd" id="GUID-E4A9A8B7-3F3C-4741-B8DC-DB36E29D555C">Hover the mouse over the Elevation Profile Widget and click the small edit icon
+<img purpose="img" placement="inline" alt="edit icon" title="edit icon" src="images/GUID-31D329BD-BC73-4BBE-AE1D-3A1261BF912A-web.png">.</span>
+          <div class="stepresult" purpose="stepresult">
+            <p id="GUID-9657CBF5-2983-49C8-A4A7-9BA34D300933">This opens the configuration window for this widget.</p>
+            <figure class="fig">
+              <img src="images/GUID-BBD63087-70CB-4233-9BFC-DAA5B71F8F5A-web.png" alt="Elevation Profile configuration" title="Elevation Profile configuration">
+            </figure>
+            <h3></h3>
+            <aside class="note" id="GUID-A21DB7BE-8662-4F27-9B81-213395583B93">
+              <h5 class="icon-caution-cone">Caution:</h5>
+              <div class="note-content">
+                <p id="GUID-BFCEA42A-DE5D-4882-A6B7-AF45DD6ABDBC">The elevation geoprocessing service supplied by esri has at best a 10 meter resolution.</p>
+              </div>
+            </aside>
+          </div>
+        </li>
+        <li purpose="step" id="ESRI_STEP_9ED29A8ED49B43C286C401019EDB417A"><span purpose="cmd" id="GUID-A5CBD998-A8B8-4A84-A079-05B5B5A0F3B0">Optionally, click <span class="uicontrol">change widget icon</span> if you want to replace the default icon for this widget.</span>
+          <div class="info" purpose="info">
+            <p id="GUID-1EEF34F1-3917-448D-88ED-DC85AFC6D5C3">A file explorer window opens allowing you to browse to a local image file to use as the widget icon.</p>
+            <aside class="note" id="GUID-4A86708B-E2BE-45A0-B100-A4D720D1BBFD">
+              <h5 class="icon-notebook">Note:</h5>
+              <div class="note-content">
+                <p id="GUID-5764AA62-CBC1-40C0-A396-6B4004CC09D4">With IE8 browser, the size of uploaded image cannot be over 21KB due to IE8 limitation.</p>
+              </div>
+            </aside>
+          </div>
+        </li>
+        <li purpose="step" id="ESRI_STEP_CD61F954D8B446F8BC6D0885E2D451A9"><span purpose="cmd" id="GUID-D42ED491-DE9E-42AF-9490-6C7205A36D41">Optionally provide a different profile geoprosessing service task url. You would do this if you are seeking better resolution profiles. You can search esri blog for an article titled "setting-up-your-own-profile-service" on how to deploy your own profile geoprocessing service.</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_F50F897CF9E244E0A02D68C9324969C7"><span purpose="cmd" id="GUID-85E45CF0-1986-4D4E-A338-504DC0CD76B3">Optionally provide a different widget width.</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_B024009938644741BDAF098B9443476B"><span purpose="cmd" id="GUID-7FB356E4-A02C-4F6D-A615-82780E4233AA">Optionally click on the <span class="uicontrol">Edit Chart Display Properties</span> link to change the appearance of the profile chart.</span>
+          <div class="info" purpose="info">
+            <h3></h3>
+            <figure class="fig">
+              <img src="images/GUID-65a048a8-e968-45f2-9fbc-7170fca46108-web.png" alt="Chart Display Settings" title="Chart Display Settings">
+            </figure>
+            <p id="GUID-5913ea50-0f20-4bb0-a9fe-173197ecd6e0">All changes made in the <span class="uicontrol">Edit Chart Display Properties</span> dialog can be seen in the preview chart once the ok button has been clicked on the <span class="uicontrol">Edit Chart Display Properties</span> dialog.</p>
+            <aside class="note" id="GUID-D69EA630-134E-4F68-A9D2-226811651025">
+              <h5 class="icon-notebook">Note:</h5>
+              <div class="note-content">
+                <p id="GUID-0E73AFDD-7C8C-41EB-90BC-C84FDC5CDB6F">If using this widget in a panel and not on screen you may want to check the <span class="uicontrol">Constrain profile height to 320px</span> to prevent the profile from becoming highly distorted due to chart filling widgets height.</p>
+              </div>
+            </aside>
+          </div>
+        </li>
+        <li purpose="step" id="ESRI_STEP_C7991324A6B44F4C868187531040A7D3"><span purpose="cmd" id="GUID-ADBF7038-E354-48C0-B4A4-4177DAB4BC14">Optionally click on the <span class="uicontrol">Edit Default Line Symbol</span> link to change the symbology of the line drawn on the map using the measure tool in this widget.</span>
+          <div class="info" purpose="info">
+            <h3></h3>
+            <figure class="fig">
+              <img src="images/GUID-f1e6f5e0-3dbc-4d27-8920-86713a3f098a-web.png" alt="Default Line Symbol Settings" title="Default Line Symbol Settings">
+            </figure>
+          </div>
+        </li>
+        <li purpose="step" id="ESRI_STEP_1E0F9DEF2FD8431892B19194786BFF55"><span purpose="cmd" id="GUID-1E7B8D5A-97E8-434C-8CD8-0CE74D32D533">Optionally click on the <span class="uicontrol">Edit export profile csv output coordinate system</span> link to change the coordinate system of the exported profiles csv file.</span>
+          <div class="info" purpose="info">
+            <h3></h3>
+            <figure class="fig">
+              <img src="images/GUID-261a4684-56f7-4aae-888c-f030d1d7fa53-web.png" alt="Profiles csv export coodinates" title="Profiles csv export coodinates">
+            </figure>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="section1 padded-anchor" id="ESRI_SECTION1_10275307C5DF45D986A6922A5BBBE67B" purpose="section1">
+    <h2>Using the Elevation Profile Widget</h2>
+    <p id="GUID-46DAF4E8-D1CC-4D6B-8737-44AD8B24F41D">Clicking the Elevation Profile Widget displays the widget.</p>
+    <figure class="fig">
+      <img src="images/GUID-D2FFDC0A-1025-4932-BD55-2BECB36CE827-web.png" alt="Use Elevation Profile widget" title="Use Elevation Profile widget">
+    </figure>
+    <p id="GUID-9F73B4DE-BBF8-4E25-8414-D3AA517E02B7">Select the measure units that you want to use for the line that you draw on the map or choose "Profile selected line..." from an existing lines popup menu.</p>
+    <figure class="fig">
+      <img src="images/GUID-E9D49585-DDDE-40FB-A3D7-7044271BA632-web.png" alt="Choose Distance Measurement Unit" title="Choose Distance Measurement Unit">
+    </figure>
+	<figure class="fig">
+      <img src="images/GUID-E48F7F9C-BD1B-4E8D-B15A-FDC633C4969D-web.png" alt="Profile selected line" title="Profile selected line">
+    </figure>
+    <p id="GUID-65AB0665-9CB6-4423-B8FA-0B014B7B0B6A">Next click on the distance measurement tool in the widget and draw a polyline on the map for the profile you wish to generate.</p>
+    <figure class="fig">
+      <img src="images/GUID-DD1A8859-59C3-4F44-A6D9-468950BC5639-web.png" alt="Select Measure Tool" title="Select Measure Tool">&nbsp;<img src="images/GUID-E68D6DB6-0B51-4B94-B7E0-7F1213B24579-web.png" alt="Draw Measure Line" title="Draw Measure Line">
+    </figure>
+    <p id="GUID-210866E8-9D72-4B75-9C8C-AD6B2D67F22E">The results of the profile are then displayed in the widget.</p>
+    <figure class="fig">
+      <img src="images/GUID-45BFB690-7AE2-49E0-9047-7132286F6651-web.png" alt="Profile Chart Result" title="Profile Chart Result">
+    </figure>
+    <p id="GUID-133FA953-2862-4EE8-8401-1F63E7E1C9C4">As you mouse over the chart in the widget a red x is moved in the map corresponding with the location in the chart.</p>
+    <p id="GUID-E5674949-52F2-400E-9CEA-9CC105CC01A7">Clicking the <span class="uicontrol">Menu</span> icon will show more options to interact with the eleveation profile.</p>
+    <figure class="fig">
+      <img src="images/GUID-7F98552A-5D81-4E17-815B-157BDB9E4EE4-web.png" alt="Profile Chart Result" title="Profile Chart Result">
+    </figure>
+    <h4 id="GUID-79C5EF65-1788-41F1-BEA3-47196572E911">Menu Options</h4>
+    <ol>
+      <li id="GUID-E74774D7-7913-499A-BEB2-8F838693F293">Clicking the <span class="uicontrol">Profile Information</span> menu option will display a message window with the elevation min, max, start, end change, and dem resolution info.</li>
+      <figure class="fig">
+        <img src="images/GUID-758A262B-EEED-4751-9CFF-2748BFB1E76A-web.png" alt="Profile Chart Information" title="Profile Chart Information">
+      </figure>
+      <li id="GUID-EB082826-9324-411F-9595-C1625C9C2CDB">Clicking the <span class="uicontrol">Prepare Download...</span> menu option will prepare the profile image to be downloaded. Once preparation is complete the Download link will be visible on the widgets UI.</li>
+      <h3></h3>
+      <aside class="note" id="GUID-76D7DA57-A127-47C8-AB59-BDB6EF7808DD">
+        <h5 class="icon-notebook">Note:</h5>
+        <div class="note-content">
+          <p id="GUID-C75BFB17-DC43-4D04-97C4-18B7431B02F0">If using a browser <strong>other than</strong> Internet Explorer that supports HTML5 Canvas you will get this menu option to export the profile as an image. If using Internet Explorer this menu option will not be displayed.</p>
+        </div>
+      </aside>
+      <figure class="fig">
+        <img src="images/GUID-9FCA7A80-FE5D-47B4-95A5-1555998B8859-web.png" alt="Profile Chart Download" title="Profile Chart Download">
+      </figure>
+      <li id="GUID-38944658-B9CA-44A2-B3B8-0AE45A1C543F">Clicking the <span class="uicontrol">Export profile data to CSV file</span> menu option will create and download the profile data (x, y, elevation and distance) to a csv file on the client.</li>
+      <li id="GUID-7DEDE89A-EDD1-4D7A-A4D4-E20B727452B9">Clicking the <span class="uicontrol">Flip elevation profile direction</span> menu option will take the existing profile and flip the begining and ending points showing the profile in reverse.</li>
+      <li id="GUID-ACFC1C4D-FABA-4DF8-8279-8C97CB336C33">Clicking the <span class="uicontrol">Clear</span> menu option will clear the profile.</li>
+    </ol>
+  </section>
+  <section class="wfsummary padded-anchor" id="GUID-2AAAF252-7642-4C1F-8785-AFC3638D89E9" purpose="wfsummary">
+  </section>
+  <div class="footer">Copyright © 2019 Calhoun County Commission.</div>
+</body>
+</html>

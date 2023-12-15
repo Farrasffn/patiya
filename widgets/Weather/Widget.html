@@ -1,0 +1,18 @@
+<div>
+  <span style="font-style:italic;padding-right:5px;margin-top:5px;display:block;">(Decimal Degrees)</span>
+  <input class="weatherNoaaFrameCoordEntryStyle" id="weatherNoaaMapLatId" style="width:35%;" type="text" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="weatherMapLat" data-dojo-attach-event="onKeyUp:coordinateEntry" />
+  <label for="weatherNoaaMapLatId" style="font-style:italic;">(Lat)</label>
+  <input class="weatherNoaaFrameCoordEntryStyle" id="weatherNoaaMapLonId" style="width:35%;" type="text" data-dojo-type="dijit/form/TextBox" data-dojo-attach-point="weatherMapLon" data-dojo-attach-event="onKeyUp:coordinateEntry" />
+  <label for="weatherNoaaMapLonId" style="font-style:italic;">(Lon)</label>
+  <div data-dojo-type="dijit/form/Button" style="padding-top:5px;" id="weatherMapActionBtnId"
+   data-dojo-attach-point="weatherMapActionBtn" data-dojo-attach-event="onClick:weatherMapClickAction" iconclass="weather-coord-button-icon"></div> 
+   <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:'weatherMapActionBtnId',position:['below']">
+      ${nls.mapActionToolTip}
+   </div>
+  <br>
+  <div id="noLocate"><p><b>Geolocation is not supported by this browser.</b><br /> Unfortunately, your local weather forecast could not be loaded.<br /> Visit the <a href="http://www.weather.gov/" target="_blank">National Weather Service</a> to view your local forecast.</p></div>
+  
+  <div id="wxFrameContainer"><iframe id="weatherFrame" style="display:none; width:100%; height:100%;"></iframe></div>
+</div>
+
+

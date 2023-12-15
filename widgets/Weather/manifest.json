@@ -1,0 +1,18 @@
+{
+  "name": "Weather",
+  "label": "Weather",
+  "platform": "HTML",
+  "version": "2.5",
+  "wabVersion": "2.5",
+  "author": "Chris Schreiber",
+  "description": "Get Weather from the National Weather Service",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasConfig": false,
+    "hasStyle": true,
+    "hasLocale": true,
+    "hasUIFile": true,
+    "hasSettingPage": false
+  }
+}

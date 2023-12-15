@@ -1,0 +1,16 @@
+{
+  "type": "widget",
+  "name": "ElevationProfile",
+  "label": "Elevation Profile",
+  "platform": "HTML",
+  "version": "2.24",
+  "wabVersion": "2.24",
+  "author": "Esri & Robert Scheitlin",
+  "description": "This is the widget that will chart evelation profiles for the lines that the user draws",
+  "copyright": "2022",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "featureActions": [{
+    "name": "ProfileLine",
+    "uri": "ProfileLineFeatureAction"
+  }]
+}

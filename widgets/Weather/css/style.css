@@ -1,0 +1,52 @@
+﻿#wxButton
+{
+    display: inline-block;
+    padding: .31rem .9rem;
+    width: auto;
+    font-style: normal;
+    color: #fff;
+    border: 1px solid #0079c1;
+    background-color: #0079c1;
+    box-sizing: border-box;
+    -webkit-transition: all 50ms linear;
+    transition: all 50ms linear;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: .9375rem;
+    font-weight: 400;
+    margin: .775rem;
+}
+    #wxButton:hover
+    {
+        background-color: #005e95;
+    }
+    #wxButton:disabled
+    {
+        opacity: 0.5;
+    }
+.jimu-widget-weather
+{
+    height: 100%;
+}
+
+.jimu-widget-weather .weather-coord-button-icon {
+  background-image: url('images/maplocationicon.png');
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.jimu-widget-weather .weatherNoaaFrameCoordEntryStyle {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+#wxFrameContainer
+{
+    height: 100%;
+    width: 100%;
+}
+#noLocate
+{
+    display: none;
+}

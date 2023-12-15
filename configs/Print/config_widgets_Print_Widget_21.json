@@ -1,0 +1,9 @@
+{
+  "serviceURL": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+  "defaultTitle": "PETA JALUR BUSWAY YANG MENJANGKAU SARANA PENDIDIKAN",
+  "defaultAuthor": "ArcGIS Web AppBuilder",
+  "defaultCopyright": "",
+  "defaultFormat": "PDF",
+  "defaultLayout": "MAP_ONLY",
+  "copyrightEditable": true
+}

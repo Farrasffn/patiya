@@ -1,0 +1,28 @@
+<div style="width:100%;">
+  <table class="wkid-table" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="first">
+          <span>${nls.wkid}</span>
+        </td>
+        <td class="second">
+          <input type="text" data-dojo-type="dijit/form/ValidationTextBox" required="true"
+            placeholder="WKID" data-dojo-attach-event="onChange:onWkidChange"
+            data-dojo-attach-point="wkid" data-dojo-props="style:{width:'100%'}" />
+        </td>
+        <td class="third">
+          <div class="help-icon" style="width:20px;height:20px;padding-left:6px; margin-left:8px;"
+               title="https://developers.arcgis.com/javascript/jshelp/ref_coordsystems.html">
+            <a href="https://developers.arcgis.com/javascript/jshelp/ref_coordsystems.html" target="blank" tabindex="-1"><span>?</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr class="example" data-dojo-attach-point="wkidLabel">
+        <td class="first"></td>
+        <td class="second">
+          <span class="example" data-dojo-attach-point="wkidLabel">${nls.cName}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
